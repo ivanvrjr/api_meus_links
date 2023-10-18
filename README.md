@@ -1,4 +1,4 @@
-# Nome do Projeto (Api Meus Links) 🚀
+# Api Meus Links 🚀
 
 ## 📄 Descrição
 
@@ -26,7 +26,7 @@ Siga os passos abaixo para obter uma cópia do projeto e configurá-lo em sua m�
 1. Clone o repositório:
 
 ```bash
-  git clone https://github.com/seu-usuario/seu-projeto.git
+  git clone https://github.com/develany/api_meus_links.git
 
 ```
 
