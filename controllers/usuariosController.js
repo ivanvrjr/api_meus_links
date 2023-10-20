@@ -41,7 +41,13 @@ const logar = async (req, res) => {
             const token = auth.generateToken(usuario.email);
             const expiracaoToken = new Date(Date.now() + 86400000);
             await usuarioService.atualizarToken(usuario.id, token, expiracaoToken);
-            res.status(200).send(token);
+            res.status(200).send({
+                token: token, usuario: {
+                    nome: usuario.nome_de_usuario,
+                    email: usuario.email,
+                    id: usuario.id
+                }
+            });
         } else {
             res.status(401).send({ message: "Credenciais inválidas" });
         }
